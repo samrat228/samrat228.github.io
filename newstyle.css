@@ -1,6 +1,38 @@
 h1 {
     color: red;
-    border: 10px solid cyan;
-    width: 400px;
+    border: 10px ridge cyan;
+    width: 700px;
     text-align: center;
+    margin: auto;
+    }
+
+body {
+    background-color: rgb(185, 238, 185);
+    }
+
+.nameislam {
+    font-style: italic;
+    color: salmon;
+    text-shadow: 1px 1px;
+    }
+
+.namesam {
+    font-weight: bold;
+    color: rgb(156, 44, 0);
+    text-shadow: 0.5px 0.5px;
+    font-family: "Chee Bleed";
+    src: url();
+    }
+
+h2, h3 {
+    border: 5px dashed white;
+    color: darkgreen;
+    text-align: center;
+    width: 250px;
+    margin: auto;
+}
+
+#con {
+    color: darkmagenta;
+    font-family: cursive;
 }
