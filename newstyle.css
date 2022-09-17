@@ -10,10 +10,18 @@ body {
     background-color: rgb(185, 238, 185);
     }
 
+.names li{
+    
+}
+
+#img {
+    float:right
+}
 #nameislam {
     font-style: italic;
     color: red;
     text-shadow: 1px 1px;
+    float:right;
     }
 .names li::first-letter{
     color: white;
@@ -64,3 +72,18 @@ h2, h3 {
 selector::pseudo-class {
     property: value;
     }
+
+#deadline {
+    color: rgb(238, 28, 28)
+}
+
+#grading {
+    
+}
+
+.st {
+    float: right;
+}
+.st2 {
+    float: right;
+}
