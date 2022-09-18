@@ -53,6 +53,10 @@ h2, h3 {
     display: inline-flex;
     list-style-type: square;
     border: 5px outset grey;
+    position: absolute;
+    float: right;
+    right: 370px;
+    top: 170px; 
 }
 
 .menu li{
@@ -95,7 +99,18 @@ selector::pseudo-class {
 .active {
     
 }
-
+.categories{
+    float: right;
+    position: absolute;
+    right: 800px;
+    top: 2300px;
+}
+.quick_links{
+    float: right;
+    position: absolute;
+    right: 600px;
+    top: 2300px;
+}
 [href] {text-decoration: none ; font-style: italic; } 
   a:link {color: rgb(2, 167, 2);}
   a:hover {background-color:antiquewhite; color: white;}
