@@ -81,8 +81,10 @@ selector::pseudo-class {
     color: rgb(238, 28, 28)
 }
 
-#grading {
-    
+#gr {
+    border: 30px solid transparent;
+    border-image: url(https://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/border.png) 30 30 round;
+    position: relative;    
 }
 
 .st {
