@@ -83,7 +83,21 @@ selector::pseudo-class {
 
 .st {
     float: right;
+    position: static;
+    right: 100px;
 }
 .st2 {
     float: right;
+    position: relative;
+    right: 100 px;
+    top: 25px;
 }
+.active {
+    
+}
+
+[href] {text-decoration: none ; font-style: italic; } 
+  a:link {color: rgb(2, 167, 2);}
+  a:hover {background-color:antiquewhite; color: white;}
+  a:visited {color:rgb(33, 12, 218);}
+  a:active {color: red;}
