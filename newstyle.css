@@ -1,7 +1,7 @@
 h1 {
     color: red;
-    border: 10px ridge cyan;
-    width: 700px;
+    border: 0.625em ridge cyan;
+    width: 43.75em;
     text-align: center;
     margin: auto;
     }
@@ -14,7 +14,7 @@ body {
 #nameislam {
     font-style: italic;
     color: red;
-    text-shadow: 1px 1px;
+    text-shadow: 0.0625em 0.0625em;
     }
 .names li::first-letter{
     color: white;
@@ -22,7 +22,7 @@ body {
 .namesam {
     font-weight: bold;
     color: rgb(156, 44, 0);
-    text-shadow: 0.5px 0.5px;
+    text-shadow: 0.03125em 0.03125em;
     font-family: "Chee Bleed";
     }
 p {
@@ -33,7 +33,7 @@ h2, h3 {
     border: 5px dashed white;
     color: darkgreen;
     text-align: center;
-    width: 250px;
+    width: 15.625em;
     margin: auto;
     }
 
@@ -47,7 +47,7 @@ h2, h3 {
 .banner {
     background-image: url('logo.png');
     width: 100%;
-    height: 150px;
+    height: 9.375rem;
     text-align: center;
     font-size: xx-large;
     color: white;
@@ -86,19 +86,19 @@ selector::pseudo-class {
   a:visited {color:rgb(33, 12, 218);}
   a:active {color: red;}
 
-.grid-container {
-    display: grid;
-    grid-template-areas:
-    'task task task task task task task task task task task task'
-    'requirments requirments requirments requirments requirments requirments requirments requirments requirments'
-    'submission submission submission grading grading grading';
-    gap: 1em;
-    background-color: peru;
-    padding: 00.53em;
-    
-}
+  .grid-container {
+      display: grid;
+      grid-template-areas:
+      'task task task task task task task task task task task task'
+      'requirments requirments requirments requirments requirments requirments requirments requirments requirments'
+      'submission submission submission grading grading grading';
+      gap: 1em;
+      background-color: peru;
+      padding: 00.53em;
+      
+  }
 
-.grid-container > div {
+  .grid-container > div {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 00.53em 0;
     font-size: 1em;
@@ -112,18 +112,56 @@ selector::pseudo-class {
   
   .flex-container > div {
     background-color:  rgba(255, 255, 255, 0.8);
-    margin: 10px;
-    padding: 20px;
-    font-size: 20px;
+    margin: 0.625em;
+    padding: 1.25em;
+    font-size: 1.25em;
   }
 
-@media screen and (max-width: 480px) {
+
+
+  .first {
+    order: 2;
+    background-color: cyan;
+    width: 100%;
+  }
+  
+  .second {
+    order: 1;
+    background-color: cyan;
+    width: 100%;
+  }
+  
+  .third {
+    order: 3;
+    background-color: cyan;
+    width: 100%;
+  }
+  
+
+   
+@media screen and (max-width: 20em) {
+    .first {
+      order: 1;
+      width: 50%;
+    }
+    .second {
+      order: 2;
+      width: 50%;
+    }
+    .third {
+      order: 3;
+      width: 50%;
+    }
+    .flex-container {
+      display: flow-root;
+    }
     .photo {
         width: max-content;
         height: max-content;
     }
     .grid-container{
         background-color: blue;
+        display: flow-root;
     }
     body {
         font-size: 00.53em;
@@ -132,10 +170,38 @@ selector::pseudo-class {
 
 }
 
-  
 
-    
-        
+@media screen and (min-width: 21em) and (max-width: 69.9375em) {
+  .first {
+    order: 1;
+    width: 75%;
+  }
+  .second {
+    order: 2;
+    width: 75%;
+  }
+  .third {
+    order: 3;
+    width: 75%;
+  }
+  .flex-container {
+    display: flow-root;
+  }
+  .photo {
+      width: max-content;
+      height: max-content;
+  }
+  .grid-container{
+      background-color: red;
+      display: flow-root;
+  }
+  body {
+      font-size: 00.73em;
+      background-color: lemonchiffon;
+  }
+
+}
+
 body
   {
     margin: 0;
