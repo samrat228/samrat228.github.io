@@ -10,14 +10,11 @@ body {
     background-color: rgb(185, 238, 185);
     }
 
-#img {
-    float:right
-}
+
 #nameislam {
     font-style: italic;
     color: red;
     text-shadow: 1px 1px;
-    float:right;
     }
 .names li::first-letter{
     color: white;
@@ -45,20 +42,7 @@ h2, h3 {
     font-family: cursive;
     }
 
-.menu {
-    display: inline-flex;
-    list-style-type: square;
-    border: 5px outset grey;
-    position: absolute;
-    float: right;
-    right: 370px;
-    top: 170px; 
-}
 
-.menu li{
-    margin-right: 35px;
-    text-align: center;
-}
     
 .banner {
     background-image: url('logo.png');
@@ -82,32 +66,194 @@ selector::pseudo-class {
     border-image: url(https://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/border.png) 30 30 round; 
 }
 
-.st {
-    float: right;
-    position: static;
-    right: 100px;
-}
-.st2 {
-    float: right;
-    position: relative;
-    right: 100 px;
-    top: 25px;
+.contacts {
+    width: 50%;
+    float: left;
 }
 
-.categories{
-    float: right;
-    position: absolute;
-    right: 800px;
-    top: 2300px;
+.categories {
+    width: 25%;
+    float: left;
 }
-.quick_links{
-    float: right;
-    position: absolute;
-    right: 600px;
-    top: 2300px;
+
+.quick_links {
+    width: 25%;
+    float: left;
 }
 [href] {text-decoration: none ; font-style: italic; } 
   a:link {color: rgb(2, 167, 2);}
   a:hover {background-color:antiquewhite; color: white;}
   a:visited {color:rgb(33, 12, 218);}
   a:active {color: red;}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'task task task task task task task task task task task task'
+    'requirments requirments requirments requirments requirments requirments requirments requirments requirments'
+    'submission submission submission grading grading grading';
+    gap: 1em;
+    background-color: peru;
+    padding: 00.53em;
+    
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 00.53em 0;
+    font-size: 1em;
+    
+  }
+
+  .flex-container {
+    display: flex;
+    background-color: cyan;
+  }
+  
+  .flex-container > div {
+    background-color:  rgba(255, 255, 255, 0.8);
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+  }
+
+@media screen and (max-width: 480px) {
+    .photo {
+        width: max-content;
+        height: max-content;
+    }
+    .grid-container{
+        background-color: blue;
+    }
+    body {
+        font-size: 00.53em;
+        background-color: white;
+    }
+
+}
+
+  
+
+    
+        
+body
+  {
+    margin: 0;
+    padding: 0;
+    font-family: "Avenir Next", "Avenir", sans-serif;
+  }
+  
+  #menuToggle
+  {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    
+    z-index: 1;
+    
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
+  #menuToggle a
+  {
+    text-decoration: none;
+    color: #232323;
+    
+    transition: color 0.3s ease;
+  }
+  
+  #menuToggle a:hover
+  {
+    color: tomato;
+  }
+  
+  
+  #menuToggle input
+  {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    
+    cursor: pointer;
+    
+    opacity: 0; 
+    z-index: 2; 
+    
+    -webkit-touch-callout: none;
+  }
+  
+  #menuToggle span
+  {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: black;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+  
+  #menuToggle span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
+  
+  #menuToggle span:nth-last-child(2)
+  {
+    transform-origin: 0% 100%;
+  }
+  
+  #menuToggle input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+  
+  #menuToggle input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+ 
+  #menuToggle input:checked ~ span:nth-last-child(2)
+  {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  
+  #menu
+  {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+  
+  #menu li
+  {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+  
+  #menuToggle input:checked ~ ul
+  {
+    transform: none;
+  }

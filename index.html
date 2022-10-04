@@ -14,18 +14,25 @@
   </header>
 
   <!-- Navbar -->
+  
   <nav>
       <a class="logo" href="https://moodle.nu.edu.kz/pluginfile.php/455241/mod_resource/content/0/WPPS_Lab4.html?embed=1#">
         <img src="./CSS Design_files/logo.png" alt="logo" width="80px" height="80px">
       </a>
-      <ul class="menu">
-        <li><a class="active" href="https://moodle.nu.edu.kz/pluginfile.php/455241/mod_resource/content/0/WPPS_Lab4.html?embed=1#task">Task</a></li>
-        <li><a href="https://moodle.nu.edu.kz/pluginfile.php/455241/mod_resource/content/0/WPPS_Lab4.html?embed=1#requirements">Requirements</a></li>
-        <li><a href="https://moodle.nu.edu.kz/pluginfile.php/455241/mod_resource/content/0/WPPS_Lab4.html?embed=1#submission">Submission</a></li>
-        <li><a href="https://moodle.nu.edu.kz/pluginfile.php/455241/mod_resource/content/0/WPPS_Lab4.html?embed=1#grading">Grading</a></li>
-        <li><a href="https://moodle.nu.edu.kz/pluginfile.php/455241/mod_resource/content/0/WPPS_Lab4.html?embed=1#deadline">Deadline</a></li>
-        <li><a href="https://moodle.nu.edu.kz/pluginfile.php/455241/mod_resource/content/0/WPPS_Lab4.html?embed=1#">SignIn</a></li>
-      </ul>
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <li><a href="https://moodle.nu.edu.kz/pluginfile.php/455241/mod_resource/content/0/WPPS_Lab4.html?embed=1#task">Task</a></li>
+          <li><a href="https://moodle.nu.edu.kz/pluginfile.php/455241/mod_resource/content/0/WPPS_Lab4.html?embed=1#submission">Submission</a></li>
+          <li><a href="https://moodle.nu.edu.kz/pluginfile.php/455241/mod_resource/content/0/WPPS_Lab4.html?embed=1#grading">Grading</a></li>
+          <li><a href="https://moodle.nu.edu.kz/pluginfile.php/455241/mod_resource/content/0/WPPS_Lab4.html?embed=1#deadline">Deadline</a></li>
+          <li><a href="https://moodle.nu.edu.kz/pluginfile.php/455241/mod_resource/content/0/WPPS_Lab4.html?embed=1#">SignIn</a></li>
+          <li><a href="https://moodle.nu.edu.kz/pluginfile.php/455241/mod_resource/content/0/WPPS_Lab4.html?embed=1#requirements">Requirements</a></li>
+          </ul>
+        </div>
     </nav>
 
   <!-- Main Content -->
@@ -34,6 +41,10 @@
       Lab 4 - Designing with CSS 
     </h1>
     <hr>
+  
+  <div class="grid-container"> 
+
+  <div class=".task">
     <article id="task">
       <h2>Task</h2>
       <p>
@@ -54,6 +65,9 @@
         <a href="https://moodle.nu.edu.kz/pluginfile.php/455241/mod_resource/content/0/WPPS_Lab4.html?embed=1#requirements">Next...</a>
       </p>
     </article>
+  </div>
+
+  <div class="requirments">
     <article id="requirements">
       <h2>Requirements</h2>
       <p>
@@ -116,6 +130,9 @@
         <a href="https://moodle.nu.edu.kz/pluginfile.php/455241/mod_resource/content/0/WPPS_Lab4.html?embed=1#submission">Next...</a>
       <p></p>
     </article>
+  </div>
+
+  <div class="submission">
     <article id="submission">
       <h2>Submission</h2>
       <p>
@@ -131,7 +148,7 @@
         it is required to insert a photo of your group
         in this <strong>&lt;img&gt;</strong> element and write your names in the
         following list items. <br>
-        <img src="./CSS Design_files/planets.jpg" alt="" width="300px" height="410" id="img">
+        <img src="./CSS Design_files/planets.jpg" class="photo" alt="" width="300px" height="410" id="img">
 
         </p><ul class = "names">
           <li id="nameislam">Islam Kumbayev</li>
@@ -143,6 +160,10 @@
         <a href="https://moodle.nu.edu.kz/pluginfile.php/455241/mod_resource/content/0/WPPS_Lab4.html?embed=1#grading">  Next...</a>
       <p></p>
     </article>
+
+  </div>
+
+  <div class="grading">  
     <article id="grading">
       <h2>Grading</h2>
       For this assignment you will get 
@@ -204,6 +225,7 @@
         
       </tbody></table>
     </article>
+  </div>
   </section>
 
   <!-- Aside Information -->
@@ -231,7 +253,9 @@
      
         <h3>Some Dummy Content</h3>
        <section>
-        <article>
+        <div class="flex-container">
+          <div>
+        <article id="art">
         <h4>Article 1</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur, 
@@ -242,8 +266,11 @@
           officiis corrupti iusto.
           <a href="https://moodle.nu.edu.kz/pluginfile.php/455241/mod_resource/content/0/WPPS_Lab4.html?embed=1#">More...</a>
         </p>
+      </div>
       </article>
-      <article>
+    
+    <div>
+      <article id="art2">
         <h4>Article 2</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur, 
@@ -254,8 +281,11 @@
           officiis corrupti iusto.
           <a href="https://moodle.nu.edu.kz/pluginfile.php/455241/mod_resource/content/0/WPPS_Lab4.html?embed=1#">More...</a>
         </p>
+      </div>
       </article>
-      <article>
+    
+    <div>
+      <article id="art3">
         <h4>Article 3</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur, 
@@ -266,7 +296,10 @@
           officiis corrupti iusto.
           <a href="https://moodle.nu.edu.kz/pluginfile.php/455241/mod_resource/content/0/WPPS_Lab4.html?embed=1#">More...</a>
         </p>
-      </article>
+      </div>
+      </article> 
+    
+  </div>
     </section>
   </aside>
 
