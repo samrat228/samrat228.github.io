@@ -156,8 +156,8 @@ selector::pseudo-class {
       display: flow-root;
     }
     .photo {
-        width: max-content;
-        height: max-content;
+        width: 100%;
+        height: 100%;
     }
     .grid-container{
         background-color: blue;
@@ -188,8 +188,8 @@ selector::pseudo-class {
     display: flow-root;
   }
   .photo {
-      width: max-content;
-      height: max-content;
+    width: 100%;
+    height: 100%;
   }
   .grid-container{
       background-color: red;
