@@ -140,6 +140,9 @@ selector::pseudo-class {
 
    
 @media screen and (max-width: 20em) {
+    h1 {
+        width: 100%;
+    }
     .first {
       order: 1;
       width: 50%;
@@ -172,7 +175,10 @@ selector::pseudo-class {
 
 
 @media screen and (min-width: 21em) and (max-width: 69.9375em) {
-  .first {
+  h1 {
+    width: 100%;
+  }
+    .first {
     order: 1;
     width: 75%;
   }
