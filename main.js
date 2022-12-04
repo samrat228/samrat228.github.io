@@ -6,7 +6,7 @@ hamburger.addEventListener("click", () => {
 })
 
 function sendMessage(){
-  let link = "https://web.telegram.org/k/#@youngtowak"
+  let link = "https://web.telegram.org/k/#Sam_Corleone"
   window.open(link);
 }
 
